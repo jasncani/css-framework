@@ -8,13 +8,13 @@
   height: 33vh;
   background-color: pink; }
 
-.h-center {
+.text-center {
   text-align: center; }
 
 .v-center {
   position: relative;
   top: 50%;
-  transform: perspective(1px) translateY(-50%); }
+  transform: translateY(-50%); }
 
 .container {
   width: 90%;
@@ -25,7 +25,7 @@
 .row {
   width: 100%;
   display: block;
-  /* dont allow row content */
+  /* dont allow row content to wrap into other rows */
   /************************ */ }
   .row:before, .row:after {
     content: "";
@@ -57,5 +57,22 @@
 
 .col-1 {
   width: 16.66%; }
+
+.navbar {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: purple;
+  overflow: hidden; }
+  .navbar a {
+    font-size: 1rem;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none; }
+    .navbar a:hover {
+      background-color: black; }
 
 /*# sourceMappingURL=style.css.map */

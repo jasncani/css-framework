@@ -1,6 +1,6 @@
 $col-width: 16.66%
 $std-padding: 0 6px 0 6px
-$std-margin: 0 0 12px 0
+$std-margin: 12px 0 12px 0
 
 *
   box-sizing: border-box
@@ -12,13 +12,13 @@ $std-margin: 0 0 12px 0
   height: 33vh
   background-color: pink
 
-.h-center
+.text-center
   text-align: center
 
 .v-center
   position: relative
   top: 50%
-  transform: perspective(1px) translateY(-50%)
+  transform: translateY(-50%)
 
 .container
   width: 90%
@@ -29,7 +29,7 @@ $std-margin: 0 0 12px 0
 .row
   width: 100%
   display: block
-  /* dont allow row content */
+  /* dont allow row content to wrap into other rows*/
   &:before, &:after
     content: ""
     display: table
@@ -61,3 +61,20 @@ $std-margin: 0 0 12px 0
 
 .col-1
   width: $col-width
+
+.navbar
+  top: 0
+  width: 100%
+  position: fixed
+  z-index: 100
+  background-color: purple
+  overflow: hidden
+  a
+    font-size: 1rem
+    display: inline-block
+    color: white
+    text-align: center
+    padding: 1rem 1rem
+    text-decoration: none
+    &:hover
+      background-color: black
