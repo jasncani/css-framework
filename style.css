@@ -2,11 +2,6 @@
   box-sizing: border-box;
   margin: 0; }
 
-body {
-  /* offset for navbar allowance */
-  padding-top: 3rem;
-  /****************************** */ }
-
 section {
   margin-top: 2rem; }
 
@@ -31,7 +26,7 @@ section {
   width: 100%;
   display: block;
   /* dont allow row content to wrap into other rows */
-  /************************ */ }
+  /************************************************* */ }
   .row:before, .row:after {
     content: "";
     display: table;
@@ -41,9 +36,9 @@ section {
   float: left;
   min-height: 1px;
   width: 16.66%;
-  word-wrap: break-word;
   /*************** gutters ************ */
-  padding: 0 6px 0 6px; }
+  padding: 0 6px 0 6px;
+  /************************************ */ }
 
 .col-6 {
   width: 99.96%; }
@@ -63,11 +58,39 @@ section {
 .col-1 {
   width: 16.66%; }
 
-.navbar {
-  top: 0;
+.navbar-fixed {
+  position: fixed;
   height: 3rem;
   width: 100%;
-  position: fixed;
+  z-index: 100;
+  background-color: purple;
+  overflow: hidden; }
+  .navbar-fixed a {
+    font-size: 1rem;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none; }
+    .navbar-fixed a:hover {
+      background-color: black; }
+  .navbar-fixed button {
+    font-size: 1rem;
+    display: inline-block;
+    color: white;
+    background-color: inherit;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border: 0; }
+    .navbar-fixed button:hover {
+      background-color: black; }
+    .navbar-fixed button:focus {
+      outline: none; }
+
+.navbar {
+  height: 3rem;
+  width: 100%;
   z-index: 100;
   background-color: purple;
   overflow: hidden; }

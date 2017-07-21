@@ -7,11 +7,6 @@ $navbar-height: 3rem
   box-sizing: border-box
   margin: 0
 
-body
-  /* offset for navbar allowance */
-  padding-top: $navbar-height
-  /*******************************/
-
 section
   margin-top: 2rem
 
@@ -46,10 +41,9 @@ section
   float: left
   min-height: 1px
   width: $col-width
-  word-wrap: break-word
   /*************** gutters *************/
   padding: $std-padding
-  /************************************/
+  /*************************************/
 
 .col-6
   width: 6 * $col-width
@@ -69,11 +63,41 @@ section
 .col-1
   width: $col-width
 
-.navbar
-  top: 0
+
+//For navbar allowance add "padding-top: $navbar-height" to body
+.navbar-fixed
+  position: fixed
   height: $navbar-height
   width: 100%
-  position: fixed
+  z-index: 100
+  background-color: purple
+  overflow: hidden
+  a
+    font-size: 1rem
+    display: inline-block
+    color: white
+    text-align: center
+    padding: 1rem 1rem
+    text-decoration: none
+    &:hover
+      background-color: black
+  button
+    font-size: 1rem
+    display: inline-block
+    color: white
+    background-color: inherit
+    text-align: center
+    padding: 1rem 1rem
+    text-decoration: none
+    border: 0
+    &:hover
+      background-color: black
+    &:focus
+      outline: none
+
+.navbar
+  height: $navbar-height
+  width: 100%
   z-index: 100
   background-color: purple
   overflow: hidden
