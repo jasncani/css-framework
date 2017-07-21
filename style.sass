@@ -1,11 +1,16 @@
 $col-width: 16.66%
 $std-padding: 0 6px 0 6px
 $std-margin: 12px 0 12px 0
+$navbar-height: 3rem
 
 *
   box-sizing: border-box
   margin: 0
-  padding: 0
+
+body
+  /* offset for navbar allowance */
+  padding-top: $navbar-height
+  /*******************************/
 
 .banner
   width: 100%
@@ -64,6 +69,7 @@ $std-margin: 12px 0 12px 0
 
 .navbar
   top: 0
+  height: $navbar-height
   width: 100%
   position: fixed
   z-index: 100
