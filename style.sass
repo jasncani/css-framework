@@ -1,5 +1,5 @@
 $col-width: 16.66%
-$std-margin: 12px 0 12px 0
+$std-padding: 6px 12px
 $dark-black: #0c0c0c
 $light-black: #1c1c1c
 $white: #e7e7e7
@@ -61,10 +61,13 @@ footer
   word-wrap: break-word
   display: table
   // large screen
-  @media only screen and (min-width: 800px)
+  @media only screen and (min-width: 1024px)
     width: 75%
-  // not a large screen
-  @media only screen and (max-width: 799px)
+  // medium screen
+  @media only screen and (min-width: 480px) and (max-width: 1024px)
+    width: 80%
+  // small screen
+  @media only screen and (max-width: 480px)
     width: 90%
 
 .portfolio
@@ -72,22 +75,22 @@ footer
   display: table
   li
     // large screen
-    @media only screen and (min-width: 800px)
+    @media only screen and (min-width: 1024px)
       float: left
       min-height: 1px
-      padding: 0 6px 0 6px
+      padding: $std-padding
       width: 2 * $col-width
     // medium screen
-    @media only screen and (min-width: 480px) and (max-width: 800px)
+    @media only screen and (min-width: 480px) and (max-width: 1024px)
       float: left
       min-height: 1px
-      padding: 0 6px 0 6px
+      padding: $std-padding
       width: 3 * $col-width
     // small screen
     @media only screen and (max-width: 480px)
       float: left
       min-height: 1px
-      padding: 0 6px 0 6px
+      padding: $std-padding
       width: 6 * $col-width
 
 .row
@@ -103,7 +106,7 @@ footer
 .col
   float: left
   min-height: 1px
-  padding: 0 6px 0 6px
+  padding: $std-padding
 
 .col-6
   @extend .col
