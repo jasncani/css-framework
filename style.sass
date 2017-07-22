@@ -3,14 +3,13 @@ $std-padding: 6px 12px
 $dark-black: #0c0c0c
 $light-black: #1c1c1c
 $white: #e7e7e7
-$grey: #b6b6b6
-$dark-grey: #303030
 
 *
   box-sizing: border-box
   margin: 0
   padding: 0
   font-size: 16px
+  font-family: 'Calibri'
 
 body
   background-color: $white
@@ -50,7 +49,9 @@ p
     padding: 1rem 1rem
     text-decoration: none
     &:hover
-      color: $light-black
+      background-color: $light-black
+    &:focus
+      background-color: $light-black
   button
     font-size: 1rem
     display: inline-block
@@ -63,6 +64,7 @@ p
       background-color: $light-black
     &:focus
       outline: none
+      background-color: $light-black
 
 .banner
   width: 100%

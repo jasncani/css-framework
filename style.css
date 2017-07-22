@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Calibri"; }
 
 body {
   background-color: #e7e7e7; }
@@ -42,7 +43,9 @@ p {
     padding: 1rem 1rem;
     text-decoration: none; }
     .navbar a:hover {
-      color: #1c1c1c; }
+      background-color: #1c1c1c; }
+    .navbar a:focus {
+      background-color: #1c1c1c; }
   .navbar button {
     font-size: 1rem;
     display: inline-block;
@@ -54,7 +57,8 @@ p {
     .navbar button:hover {
       background-color: #1c1c1c; }
     .navbar button:focus {
-      outline: none; }
+      outline: none;
+      background-color: #1c1c1c; }
 
 .banner {
   width: 100%;
