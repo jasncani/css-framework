@@ -36,13 +36,38 @@ h1
 p
   font-size: 1rem
 
-footer
-  margin-top: 2rem
+.navbar
+  min-height: 3rem
+  width: 100%
+  z-index: 100
+  background-color: $dark-black
+  overflow: hidden
+  a
+    font-size: 1rem
+    display: inline-block
+    color: $white
+    text-align: center
+    padding: 1rem 1rem
+    text-decoration: none
+    &:hover
+      color: $light-black
+  button
+    font-size: 1rem
+    display: inline-block
+    color: $white
+    background-color: inherit
+    text-align: center
+    padding: 1rem 1rem
+    border: 0
+    &:hover
+      background-color: $light-black
+    &:focus
+      outline: none
 
 .banner
   width: 100%
   height: 25vh
-  background-color: $dark-grey
+  background-color: $light-black
   color: $white
 
 .text-center
@@ -61,37 +86,37 @@ footer
   word-wrap: break-word
   display: table
   // large screen
-  @media only screen and (min-width: 1024px)
-    width: 75%
-  // medium screen
-  @media only screen and (min-width: 480px) and (max-width: 1024px)
+  @media only screen and (min-width: 1280px)
     width: 80%
+  // medium screen
+  @media only screen and (min-width: 628px) and (max-width: 1279px)
+    width: 85%
   // small screen
-  @media only screen and (max-width: 480px)
+  @media only screen and (max-width: 627px)
     width: 90%
 
-.portfolio
+/*.portfolio
   list-style: none
   display: table
   li
     // large screen
-    @media only screen and (min-width: 1024px)
+    @media only screen and (min-width: 1280px)
       float: left
       min-height: 1px
       padding: $std-padding
       width: 2 * $col-width
     // medium screen
-    @media only screen and (min-width: 480px) and (max-width: 1024px)
+    @media only screen and (min-width: 628px) and (max-width: 1279px)
       float: left
       min-height: 1px
       padding: $std-padding
       width: 3 * $col-width
     // small screen
-    @media only screen and (max-width: 480px)
+    @media only screen and (max-width: 627px)
       float: left
       min-height: 1px
       padding: $std-padding
-      width: 6 * $col-width
+      width: 6 * $col-width*/
 
 .row
   width: 100%
@@ -108,54 +133,86 @@ footer
   min-height: 1px
   padding: $std-padding
 
-.col-6
+.col-s-6
   @extend .col
   width: 6 * $col-width
 
-.col-5
+.col-s-5
   @extend .col
   width: 5 * $col-width
 
-.col-4
+.col-s-4
   @extend .col
   width: 4 * $col-width
 
-.col-3
+.col-s-3
   @extend .col
   width: 3 * $col-width
 
-.col-2
+.col-s-2
   @extend .col
   width: 2 * $col-width
 
-.col-1
+.col-s-1
   @extend .col
   width: $col-width
 
-.navbar
-  min-height: 3rem
-  width: 100%
-  z-index: 100
-  background-color: $dark-black
-  overflow: hidden
-  a
-    font-size: 1rem
-    display: inline-block
-    color: $white
-    text-align: center
-    padding: 1rem 1rem
-    text-decoration: none
-    &:hover
-      color: $grey
-  button
-    font-size: 1rem
-    display: inline-block
-    color: $white
-    background-color: inherit
-    text-align: center
-    padding: 1rem 1rem
-    border: 0
-    &:hover
-      background-color: $grey
-    &:focus
-      outline: none
+.col-m-6
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: 6 * $col-width
+
+.col-m-5
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: 5 * $col-width
+
+.col-m-4
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: 4 * $col-width
+
+.col-m-3
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: 3 * $col-width
+
+.col-m-2
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: 2 * $col-width
+
+.col-m-1
+  @extend .col
+  @media only screen and (min-width: 628px)
+    width: $col-width
+
+.col-l-6
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: 6 * $col-width
+
+.col-l-5
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: 5 * $col-width
+
+.col-l-4
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: 4 * $col-width
+
+.col-l-3
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: 3 * $col-width
+
+.col-l-2
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: 2 * $col-width
+
+.col-l-1
+  @extend .col
+  @media only screen and (min-width: 1280px)
+    width: $col-width
