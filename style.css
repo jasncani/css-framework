@@ -30,50 +30,53 @@ p {
   font-size: 1rem; }
 
 ul.navbar {
-  list-style: none;
   min-height: 3rem;
+  list-style: none;
   width: 100%;
   z-index: 100;
   background-color: #0c0c0c;
   overflow: hidden; }
   @media screen and (min-width: 721px) {
-    ul.navbar li.navbar-responsive-toggle {
+    ul.navbar .navbar-responsive-toggle {
       display: none; }
-    ul.navbar li a {
-      float: left;
-      font-size: 1rem;
+    ul.navbar li {
       display: inline-block;
-      color: #e7e7e7;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none; }
-      ul.navbar li a:hover {
-        background-color: #1c1c1c; } }
+      float: left; }
+      ul.navbar li a {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 1rem;
+        color: #e7e7e7;
+        text-decoration: none; }
+        ul.navbar li a:hover {
+          background-color: #1c1c1c; } }
   @media screen and (max-width: 720px) {
-    ul.navbar li a {
+    ul.navbar li {
       display: none; }
     ul.navbar li.navbar-responsive-toggle {
       float: right;
-      font-size: 1rem;
-      display: inline-block;
-      color: #e7e7e7;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none; }
-      ul.navbar li.navbar-responsive-toggle:hover {
-        background-color: #1c1c1c; } }
+      display: inline-block; }
+      ul.navbar li.navbar-responsive-toggle a {
+        font-size: 1rem;
+        display: inline-block;
+        color: #e7e7e7;
+        padding: 1rem;
+        text-decoration: none; }
+        ul.navbar li.navbar-responsive-toggle a:hover {
+          background-color: #1c1c1c; } }
 
 @media screen and (max-width: 720px) {
-  ul.navbar-responsive li a {
-    float: none;
-    font-size: 1rem;
+  ul.navbar-responsive li {
     display: block;
-    color: #e7e7e7;
-    text-align: center;
-    padding: 1rem 1rem;
-    text-decoration: none; }
-    ul.navbar-responsive li a:hover {
-      background-color: #1c1c1c; } }
+    float: none; }
+    ul.navbar-responsive li a {
+      font-size: 1rem;
+      display: block;
+      color: #e7e7e7;
+      padding: 1rem;
+      text-decoration: none; }
+      ul.navbar-responsive li a:hover {
+        background-color: #1c1c1c; } }
 
 .banner {
   width: 100%;

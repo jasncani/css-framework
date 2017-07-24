@@ -36,55 +36,58 @@ p
   font-size: 1rem
 
 ul.navbar
-  list-style: none
   min-height: 3rem
+  list-style: none
   width: 100%
   z-index: 100
   background-color: $black
   overflow: hidden
   // medium and large screen
   @media screen and (min-width: 721px)
-    li.navbar-responsive-toggle
+    .navbar-responsive-toggle
       display: none
-    li a
-      float: left
-      font-size: 1rem
+    li
       display: inline-block
-      color: $white
-      text-align: center
-      padding: 1rem 1rem
-      text-decoration: none
-      &:hover
-        background-color: $grey
+      float: left
+      a
+        display: inline-block
+        font-size: 1rem
+        padding: 1rem
+        color: $white
+        text-decoration: none
+        &:hover
+          background-color: $grey
   // small screen
   @media screen and (max-width: 720px)
-    li a
+    li
       display: none
     li.navbar-responsive-toggle
       float: right
-      font-size: 1rem
       display: inline-block
-      color: $white
-      text-align: center
-      padding: 1rem 1rem
-      text-decoration: none
-      &:hover
-        background-color: $grey
+      a
+        font-size: 1rem
+        display: inline-block
+        color: $white
+        padding: 1rem
+        text-decoration: none
+        &:hover
+          background-color: $grey
 
 // added to elements when toggle is clicked
 ul.navbar-responsive
   // small screen
   @media screen and (max-width: 720px)
-    li a
-      float: none
-      font-size: 1rem
+    li
       display: block
-      color: $white
-      text-align: center
-      padding: 1rem 1rem
-      text-decoration: none
-      &:hover
-        background-color: $grey
+      float: none
+      a
+        font-size: 1rem
+        display: block
+        color: $white
+        padding: 1rem
+        text-decoration: none
+        &:hover
+          background-color: $grey
 
 .banner
   width: 100%
