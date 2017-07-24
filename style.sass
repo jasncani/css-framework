@@ -35,7 +35,7 @@ h1
 p
   font-size: 1rem
 
-.navbar
+ul.navbar
   list-style: none
   min-height: 3rem
   width: 100%
@@ -44,9 +44,9 @@ p
   overflow: hidden
   // medium and large screen
   @media screen and (min-width: 721px)
-    a.navbar-responsive-toggle
+    li.navbar-responsive-toggle
       display: none
-    a
+    li a
       float: left
       font-size: 1rem
       display: inline-block
@@ -58,9 +58,9 @@ p
         background-color: $grey
   // small screen
   @media screen and (max-width: 720px)
-    a
+    li a
       display: none
-    a.navbar-responsive-toggle
+    li.navbar-responsive-toggle
       float: right
       font-size: 1rem
       display: inline-block
@@ -72,10 +72,10 @@ p
         background-color: $grey
 
 // added to elements when toggle is clicked
-.navbar-responsive
+ul.navbar-responsive
   // small screen
   @media screen and (max-width: 720px)
-    a
+    li a
       float: none
       font-size: 1rem
       display: block

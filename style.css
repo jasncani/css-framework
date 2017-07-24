@@ -29,7 +29,7 @@ h1 {
 p {
   font-size: 1rem; }
 
-.navbar {
+ul.navbar {
   list-style: none;
   min-height: 3rem;
   width: 100%;
@@ -37,9 +37,9 @@ p {
   background-color: #0c0c0c;
   overflow: hidden; }
   @media screen and (min-width: 721px) {
-    .navbar a.navbar-responsive-toggle {
+    ul.navbar li.navbar-responsive-toggle {
       display: none; }
-    .navbar a {
+    ul.navbar li a {
       float: left;
       font-size: 1rem;
       display: inline-block;
@@ -47,12 +47,12 @@ p {
       text-align: center;
       padding: 1rem 1rem;
       text-decoration: none; }
-      .navbar a:hover {
+      ul.navbar li a:hover {
         background-color: #1c1c1c; } }
   @media screen and (max-width: 720px) {
-    .navbar a {
+    ul.navbar li a {
       display: none; }
-    .navbar a.navbar-responsive-toggle {
+    ul.navbar li.navbar-responsive-toggle {
       float: right;
       font-size: 1rem;
       display: inline-block;
@@ -60,11 +60,11 @@ p {
       text-align: center;
       padding: 1rem 1rem;
       text-decoration: none; }
-      .navbar a.navbar-responsive-toggle:hover {
+      ul.navbar li.navbar-responsive-toggle:hover {
         background-color: #1c1c1c; } }
 
 @media screen and (max-width: 720px) {
-  .navbar-responsive a {
+  ul.navbar-responsive li a {
     float: none;
     font-size: 1rem;
     display: block;
@@ -72,7 +72,7 @@ p {
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none; }
-    .navbar-responsive a:hover {
+    ul.navbar-responsive li a:hover {
       background-color: #1c1c1c; } }
 
 .banner {
