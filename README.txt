@@ -1,7 +1,5 @@
-Simple CSS framework made in SASS.
+Simple framework for making webpages.
 
 Contains:
   1. 6 column grid layout
   2. navbar
-  3. responsive containers
-  4. portfolio module
