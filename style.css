@@ -29,36 +29,51 @@ h1 {
 p {
   font-size: 1rem; }
 
-ul.navbar {
+.navbar {
+  list-style: none;
   min-height: 3rem;
   width: 100%;
   z-index: 100;
   background-color: #0c0c0c;
   overflow: hidden; }
-  ul.navbar li a {
+  @media screen and (min-width: 721px) {
+    .navbar a.navbar-responsive-toggle {
+      display: none; }
+    .navbar a {
+      float: left;
+      font-size: 1rem;
+      display: inline-block;
+      color: #e7e7e7;
+      text-align: center;
+      padding: 1rem 1rem;
+      text-decoration: none; }
+      .navbar a:hover {
+        background-color: #1c1c1c; } }
+  @media screen and (max-width: 720px) {
+    .navbar a {
+      display: none; }
+    .navbar a.navbar-responsive-toggle {
+      float: right;
+      font-size: 1rem;
+      display: inline-block;
+      color: #e7e7e7;
+      text-align: center;
+      padding: 1rem 1rem;
+      text-decoration: none; }
+      .navbar a.navbar-responsive-toggle:hover {
+        background-color: #1c1c1c; } }
+
+@media screen and (max-width: 720px) {
+  .navbar-responsive a {
+    float: none;
     font-size: 1rem;
-    display: inline-block;
+    display: block;
     color: #e7e7e7;
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none; }
-    ul.navbar li a:hover {
-      background-color: #1c1c1c; }
-    ul.navbar li a:focus {
-      background-color: #1c1c1c; }
-  ul.navbar li button {
-    font-size: 1rem;
-    display: inline-block;
-    color: #e7e7e7;
-    background-color: inherit;
-    text-align: center;
-    padding: 1rem 1rem;
-    border: 0; }
-    ul.navbar li button:hover {
-      background-color: #1c1c1c; }
-    ul.navbar li button:focus {
-      outline: none;
-      background-color: #1c1c1c; }
+    .navbar-responsive a:hover {
+      background-color: #1c1c1c; } }
 
 .banner {
   width: 100%;
@@ -81,13 +96,13 @@ ul.navbar {
   margin: auto;
   word-wrap: break-word;
   display: table; }
-  @media only screen and (min-width: 1280px) {
+  @media screen and (min-width: 1281px) {
     .container {
       width: 80%; } }
-  @media only screen and (min-width: 628px) and (max-width: 1279px) {
+  @media screen and (min-width: 721px) and (max-width: 1280px) {
     .container {
       width: 85%; } }
-  @media only screen and (max-width: 627px) {
+  @media screen and (max-width: 720px) {
     .container {
       width: 90%; } }
 
@@ -96,19 +111,19 @@ ul.navbar {
  * display: table
  * li
  *   // large screen
- *   @media only screen and (min-width: 1280px)
+ *   @media screen and (min-width: 1281px)
  *     float: left
  *     min-height: 1px
  *     padding: $std-padding
  *     width: 2 * $col-width
  *   // medium screen
- *   @media only screen and (min-width: 628px) and (max-width: 1279px)
+ *   @media screen and (min-width: 721px) and (max-width: 1280px)
  *     float: left
  *     min-height: 1px
  *     padding: $std-padding
  *     width: 3 * $col-width
  *   // small screen
- *   @media only screen and (max-width: 627px)
+ *   @media screen and (max-width: 720px)
  *     float: left
  *     min-height: 1px
  *     padding: $std-padding
@@ -146,51 +161,51 @@ ul.navbar {
 .col-s-1 {
   width: 16.66%; }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-6 {
     width: 99.96%; } }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-5 {
     width: 83.3%; } }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-4 {
     width: 66.64%; } }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-3 {
     width: 49.98%; } }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-2 {
     width: 33.32%; } }
 
-@media only screen and (min-width: 628px) {
+@media screen and (min-width: 721px) {
   .col-m-1 {
     width: 16.66%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-6 {
     width: 99.96%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-5 {
     width: 83.3%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-4 {
     width: 66.64%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-3 {
     width: 49.98%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-2 {
     width: 33.32%; } }
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
   .col-l-1 {
     width: 16.66%; } }
 
